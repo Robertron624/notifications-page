@@ -1,0 +1,42 @@
+.notification-contaier{
+    display: flex;
+    gap: 1rem;
+
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+
+    background-color: var(--light-grayish-blue-2);
+    border-radius: 8px;
+    padding: 0.9rem 1.5rem;
+}
+
+.sender-profile {
+    width: 50px;
+}
+
+.notification-main--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notification-main--info div {
+    display: flex;
+    gap: .5rem;
+    font-size: .75rem;
+}
+
+.sender-name {
+    
+}
+
+.notification-timestamp {
+    text-align: left;
+    font-size: .75rem;
+    color: var(--grayish-blue);
+}
