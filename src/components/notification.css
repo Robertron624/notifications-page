@@ -1,6 +1,6 @@
 .notification-contaier{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 
     --white: hsl(0, 0%, 100%);
     --very-light-grayish-blue: hsl(210, 60%, 98%);
@@ -16,27 +16,43 @@
 }
 
 .sender-profile {
-    width: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 .notification-main--info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
 
 .notification-main--info div {
     display: flex;
-    gap: .5rem;
     font-size: .75rem;
 }
 
 .sender-name {
-    
+    font-weight: 800;
+    margin-right: .3rem;
+    cursor: pointer;
 }
 
 .notification-timestamp {
     text-align: left;
     font-size: .75rem;
-    color: var(--grayish-blue);
+    color: var(--dark-grayish-blue);
+}
+
+/* .post-description{
+
+} */
+
+.post-description .post {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.not-read::after {
+    content: "not read !!";
 }

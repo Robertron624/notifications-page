@@ -9,20 +9,8 @@ import avatarRizkiHasanuddin from "/avatar-rizky-hasanuddin.webp";
 import avatarKimberlySmith from "/avatar-kimberly-smith.webp";
 import avatarNathanPeterson from "/avatar-nathan-peterson.webp";
 import avatarAnnaKim from "/avatar-anna-kim.webp";
+import { NotificationType } from "./typings";
 
-type NotificationType = {
-    sender: string;
-    notificationType:
-        | "pm"
-        | "follow"
-        | "joined"
-        | "reaction"
-        | "comment"
-        | "left";
-    timeAgo: string;
-    description?: string;
-    senderProfile?: string;
-};
 
 const notifications: NotificationType[] = [
     {
@@ -30,6 +18,7 @@ const notifications: NotificationType[] = [
         notificationType: "reaction",
         senderProfile: avatarMarkWeber,
         timeAgo: "1m ago",
+        actionReciever: "My first tournament today!"
     },
     {
         sender: "Angela Gray",
@@ -42,30 +31,36 @@ const notifications: NotificationType[] = [
         notificationType: "joined",
         senderProfile: avatarJacobThompson,
         timeAgo: "1 day ago",
+        actionReciever: "Chess Club"
     },
     {
         sender: "Rizky Hasanuddin",
         notificationType: "pm",
         senderProfile: avatarRizkiHasanuddin,
         timeAgo: "5 days ago",
+        description: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        I'm already having lots of fun and improving my game.`
     },
     {
         sender: "Kimberly Smith",
         notificationType: "comment",
         senderProfile: avatarKimberlySmith,
         timeAgo: "1 week ago",
+        actionReciever: "picture"
     },
     {
         sender: "Nathan Peterson",
         notificationType: "reaction",
         senderProfile: avatarNathanPeterson,
         timeAgo: "2 weeks ago",
+        actionReciever: "5 end-game strategies to increase your win-rate",
     },
     {
         sender: "Anna Kim",
         notificationType: "left",
         senderProfile: avatarAnnaKim,
         timeAgo: "2 weeks ago",
+        actionReciever: "Chess Club"
     },
 ];
 
@@ -88,6 +83,7 @@ function App() {
                         sender={notification.sender}
                         notificationType={notification.notificationType}
                         senderProfile={notification.senderProfile}
+                        actionReciever={notification.actionReciever}
                     />
                 ))}
             </div>
