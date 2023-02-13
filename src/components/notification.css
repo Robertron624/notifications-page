@@ -1,6 +1,9 @@
-.notification-contaier{
+.notification-container{
     display: flex;
     gap: 0.5rem;
+
+    --orangish-red: hsl(1, 90%, 64%);
+    --strong-blue: hsl(219, 85%, 26%);
 
     --white: hsl(0, 0%, 100%);
     --very-light-grayish-blue: hsl(210, 60%, 98%);
@@ -10,9 +13,13 @@
     --dark-grayish-blue: hsl(219, 12%, 42%);
     --very-dark-blue: hsl(224, 21%, 14%);
 
-    background-color: var(--light-grayish-blue-2);
+
     border-radius: 8px;
     padding: 0.9rem 1.5rem;
+}
+
+.not-read {
+    background-color: var(--light-grayish-blue-2);
 }
 
 .sender-profile {
@@ -44,15 +51,35 @@
     color: var(--dark-grayish-blue);
 }
 
-/* .post-description{
-
-} */
+.post-description{
+    width: fit-content;
+}
 
 .post-description .post {
     font-weight: 600;
     color: var(--very-dark-blue);
 }
 
-.not-read::after {
-    content: "not read !!";
+.notification-text {
+    align-items: center;
+    display: flex;
+}
+
+.group {
+    color: var(--strong-blue);
+    font-weight: 700;
+}
+
+.not-read--icon {
+    height: 10px;
+    width: 10px;
+    border-radius: 30px;
+    background-color: var(--orangish-red);
+    margin-left: .3rem;
+    align-self: flex-start;
+    margin-top: .3rem;
+}
+
+.hidden {
+    display: none;
 }

@@ -11,4 +11,5 @@ export type NotificationType = {
     description?: string;
     senderProfile?: string;
     actionReciever?: string;
+    read: boolean;
 };

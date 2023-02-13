@@ -18,20 +18,19 @@ const Notification = ({
     description,
     senderProfile,
     actionReciever,
+    read,
 }: NotificationType) => {
 
-    const [isNotificationRead, setIsNotificationRead] = useState(false)
-
     return (
-        <div className="notification-contaier">
+        <div className={`notification-container ${read ? 'read': 'not-read'}`}>
             <img
                 className="sender-profile"
                 src={senderProfile}
                 alt="sender profile pic"
             />
             <div className="notification-main--info">
-                <div className="">
-                    <p className={`post-description ${isNotificationRead ? 'read': 'not-read'}`}>
+                <div className="notification-text">
+                    <p className={`post-description`}>
                         <span className="sender-name">{sender}</span>
                         {`${notificationMessages[notificationType]}`}{" "}
                         {notificationType == "joined" ||
@@ -43,6 +42,7 @@ const Notification = ({
                             actionReciever
                         )}
                     </p>
+                    <span className={`not-read--icon ${read ? 'hidden' : 'visssible'}`}></span>
                 </div>
                 <span className="notification-timestamp">{timeAgo}</span>
             </div>
