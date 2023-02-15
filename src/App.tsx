@@ -88,6 +88,7 @@ function App() {
             };
         });
         setMyNotifications(newNotificationsArray);
+        setUnreadNotifications(0)
     }
 
     return (
