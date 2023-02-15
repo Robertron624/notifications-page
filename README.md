@@ -12,9 +12,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
     -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,17 +28,17 @@ Users should be able to:
 ### Screenshot
 
 Desktop
-
-
+![Vite-React-TS-desktop](https://user-images.githubusercontent.com/72587880/219126279-1ede4bb2-0b89-4c67-b4e0-1cd7c91c5a31.png)
 
 Mobile
+![Frontend-Mentor-Notifications-page-mobile](https://user-images.githubusercontent.com/72587880/219126397-78c6abdb-f5e3-4c80-8f33-77d19867da8d.png)
 
 
 
 ### Links
 
 -   Solution URL: [Solution URL here](https://github.com/Robertron624/notifications-page)
--   Live Site URL: [Live site URL here](https://leafy-fudge-90b3ab.netlify.app/)
+-   Live Site URL: [Live site URL here](https://marvelous-lebkuchen-77803d.netlify.app/)
 
 ## My process
 
