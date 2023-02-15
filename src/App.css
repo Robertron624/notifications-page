@@ -28,7 +28,6 @@ p {
   background-color: var(--white);
   padding: 1rem;
   max-width: 34rem;
-  max-height: 46rem;
   margin: 6rem 0;
   border-radius: 12px;
 }
@@ -77,4 +76,10 @@ p {
   color: black;
 
   background-color: var(--white);
+}
+
+@media screen and (min-width: 562px) {
+  .App {
+    max-height: 46rem;
+  }
 }
