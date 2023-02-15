@@ -18,6 +18,7 @@ const Notification = ({
     description,
     senderProfile,
     actionReciever,
+    postPhotoUrl,
     read,
 }: NotificationType) => {
 
@@ -29,7 +30,7 @@ const Notification = ({
                 alt="sender profile pic"
             />
             <div className="notification-main--info">
-                <div className="notification-text">
+                <div className={`notification-text ${postPhotoUrl ? "justify-between": ""}`}>
                     <p className={`post-description`}>
                         <span className="sender-name">{sender}</span>
                         {`${notificationMessages[notificationType]}`}{" "}
@@ -43,6 +44,7 @@ const Notification = ({
                         )}
                     </p>
                     <span className={`not-read--icon ${read ? 'hidden' : 'visssible'}`}></span>
+                    {postPhotoUrl && (<img className="post-photo" src={postPhotoUrl}/>)}
                 </div>
                 <span className="notification-timestamp">{timeAgo}</span>
                 {description && (

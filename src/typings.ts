@@ -11,5 +11,6 @@ export type NotificationType = {
     description?: string;
     senderProfile?: string;
     actionReciever?: string;
+    postPhotoUrl?: string;
     read: boolean;
 };

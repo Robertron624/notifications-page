@@ -12,6 +12,7 @@
     --grayish-blue: hsl(219, 14%, 63%);
     --dark-grayish-blue: hsl(219, 12%, 42%);
     --very-dark-blue: hsl(224, 21%, 14%);
+    --light-blue: hsl(210, 62%, 94%);
 
 
     border-radius: 8px;
@@ -20,6 +21,7 @@
 
 .not-read {
     background-color: var(--light-grayish-blue-2);
+    background-color: #f6fafd;
 }
 
 .sender-profile {
@@ -32,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    width: 100%;
 }
 
 .notification-main--info div {
@@ -39,10 +42,18 @@
     font-size: .75rem;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .sender-name {
     font-weight: 800;
     margin-right: .3rem;
     cursor: pointer;
+}
+
+.sender-name:hover {
+    color:var(--strong-blue);
 }
 
 .notification-timestamp {
@@ -57,7 +68,12 @@
 
 .post-description .post {
     font-weight: 600;
-    color: var(--very-dark-blue);
+    color: black;
+    cursor: pointer;
+}
+
+.post-description .post:hover {
+    color: var(--blue);
 }
 
 .notification-text {
@@ -68,6 +84,7 @@
 .group {
     color: var(--strong-blue);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .not-read--icon {
@@ -80,6 +97,10 @@
     margin-top: .3rem;
 }
 
+.post-photo {
+    width: 38px;
+}
+
 .hidden {
     display: none;
 }
@@ -89,4 +110,9 @@
     border: 1px solid var(--light-grayish-blue-2);
     padding: 0.8rem;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.description-container:hover {
+    background-color: var(--light-blue);
 }

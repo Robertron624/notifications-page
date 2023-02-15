@@ -9,6 +9,7 @@ import avatarRizkiHasanuddin from "/avatar-rizky-hasanuddin.webp";
 import avatarKimberlySmith from "/avatar-kimberly-smith.webp";
 import avatarNathanPeterson from "/avatar-nathan-peterson.webp";
 import avatarAnnaKim from "/avatar-anna-kim.webp";
+import chessImage from "/image-chess.webp"
 import { NotificationType } from "./typings";
 
 const notifications: NotificationType[] = [
@@ -50,6 +51,7 @@ const notifications: NotificationType[] = [
         senderProfile: avatarKimberlySmith,
         timeAgo: "1 week ago",
         actionReciever: "picture",
+        postPhotoUrl: chessImage,
         read: true,
     },
     {
@@ -109,6 +111,7 @@ function App() {
                         actionReciever={notification.actionReciever}
                         read={notification.read}
                         description={notification.description}
+                        postPhotoUrl={notification.postPhotoUrl}
                     />
                 ))}
             </div>
