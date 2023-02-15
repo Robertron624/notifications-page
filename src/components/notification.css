@@ -83,3 +83,10 @@
 .hidden {
     display: none;
 }
+
+.description-container {
+    margin-top: 1rem;
+    border: 1px solid var(--light-grayish-blue-2);
+    padding: 0.8rem;
+    border-radius: 10px;
+}

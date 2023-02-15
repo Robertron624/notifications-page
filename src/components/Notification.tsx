@@ -45,6 +45,11 @@ const Notification = ({
                     <span className={`not-read--icon ${read ? 'hidden' : 'visssible'}`}></span>
                 </div>
                 <span className="notification-timestamp">{timeAgo}</span>
+                {description && (
+                    <div className="description-container">
+                        <p>{description}</p>
+                    </div>
+                )}
             </div>
         </div>
     );

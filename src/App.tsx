@@ -108,6 +108,7 @@ function App() {
                         senderProfile={notification.senderProfile}
                         actionReciever={notification.actionReciever}
                         read={notification.read}
+                        description={notification.description}
                     />
                 ))}
             </div>
