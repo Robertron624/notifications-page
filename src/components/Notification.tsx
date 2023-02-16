@@ -23,7 +23,7 @@ const Notification = ({
 }: NotificationType) => {
 
     return (
-        <div className={`notification-container ${read ? 'read': 'not-read'}`} role="notification info">
+        <div className={`notification-container ${read ? 'read': 'not-read'}`} >
             <img
                 className="sender-profile"
                 src={senderProfile}
