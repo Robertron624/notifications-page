@@ -23,15 +23,16 @@ const Notification = ({
 }: NotificationType) => {
 
     return (
-        <div className={`notification-container ${read ? 'read': 'not-read'}`}>
+        <div className={`notification-container ${read ? 'read': 'not-read'}`} role="notification info">
             <img
                 className="sender-profile"
                 src={senderProfile}
                 alt="sender profile pic"
+                role={"img"}
             />
             <div className="notification-main--info">
                 <div className={`notification-text ${postPhotoUrl ? "justify-between": ""}`}>
-                    <p className={`post-description`}>
+                    <p className={`post-description`} role={"contentinfo"}>
                         <span className="sender-name">{sender}</span>
                         {`${notificationMessages[notificationType]}`}{" "}
                         {notificationType == "joined" ||
@@ -44,11 +45,11 @@ const Notification = ({
                         )}
                     </p>
                     <span className={`not-read--icon ${read ? 'hidden' : 'visssible'}`}></span>
-                    {postPhotoUrl && (<img className="post-photo" src={postPhotoUrl}/>)}
+                    {postPhotoUrl && (<img className="post-photo" src={postPhotoUrl} alt="attached photo" role={"img"}/>)}
                 </div>
-                <span className="notification-timestamp">{timeAgo}</span>
+                <span className="notification-timestamp" role={"contentinfo"}>{timeAgo}</span>
                 {description && (
-                    <div className="description-container">
+                    <div className="description-container" role={"contentinfo"}>
                         <p>{description}</p>
                     </div>
                 )}

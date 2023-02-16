@@ -93,7 +93,7 @@ function App() {
 
     return (
         <div className="App">
-            <div className="notifications-header">
+            <div className="notifications-header" role={"app header"}>
                 <h1>
                     Notifications <span>{unreadNotifications}</span>
                 </h1>
